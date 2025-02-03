@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app
+  description: "Основное приложение."
+spec:
+  type: service
+  lifecycle: production
+  owner: team-name
+  providesApis: []
+  consumesApis: []
+  dependsOn:
+    - component:service_1
+    - component:service_2

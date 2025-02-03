@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: service_1
+  description: "Сервис 1."
+spec:
+  type: service
+  lifecycle: production
+  owner: team-name
+  dependsOn:
+    - component:back_1
+    - component:back_2
